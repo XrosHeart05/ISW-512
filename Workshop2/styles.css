@@ -1,0 +1,39 @@
+.img-left {
+    float: left;
+    margin: 0.12%;
+    padding: 0.6%;
+    line-height: 60%;
+}
+
+.container-center{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    margin: 2%;
+}
+
+.text-lining{
+    margin: 0%;
+    padding: 12%;
+}
+
+.text-left{
+    line-break: initial;
+    text-align: left;
+}
+
+.columns-config{
+    column-count: 2;
+    column-gap: 100px;
+    column-rule: 10px;
+}
+
+.p{
+    line-height: 100%;
+    font: sans-serif;
+}
+
+.hr-v{
+    width: 1px;
+    height: 500px;
+}
