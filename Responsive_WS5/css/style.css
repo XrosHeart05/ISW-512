@@ -1,0 +1,44 @@
+@media only screen and (max-width: 936px){
+    #main-content{
+        display: flex;
+    }
+    #menu{
+        background-color: #e3e577;
+        width: 25%;
+        border-radius: 10px;
+        display: inline-block;
+        margin-right: 2.5%;
+    }
+    #menu ul{
+        list-style: none;
+        padding: 0 1em;
+    }
+    #menu ul li a{
+        text-decoration: none;
+    }
+    #res-div{
+        display: block;
+        justify-content: center;
+        border-radius: 10px;
+        background-color: #e3e577; 
+    }
+
+    #res-div h1{
+        font-size: 24px;
+    }
+
+    #res-div h2{
+        font-size: 20px; 
+    }
+
+    #res-div h1, #res-div h2{
+        display: flex;
+        justify-content: center;
+    }
+    #res-exas{
+        display: inline-block;
+        width: 40%;
+        background-color: #1954e8;
+        border-radius: 10px; 
+    }
+}
