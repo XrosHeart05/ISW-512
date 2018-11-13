@@ -1,0 +1,33 @@
+body{
+    font-size: 14px;
+    background-color: #2caf67;
+    color: #ffffff;
+    font-family: 'Gadugi';
+}
+
+h1{
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+form input{
+    display: block;
+    margin-bottom: 1em;
+}
+
+form button{
+    margin: 1.2em 0px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: #0b9ca7;
+    padding: 1em 0px;
+    color: #ffffff;
+}
