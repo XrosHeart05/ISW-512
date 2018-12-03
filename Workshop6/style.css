@@ -5,6 +5,14 @@ body{
     font-family: 'Gadugi';
 }
 
+#delete{
+    background-color: #b62d2d;
+    border-radius: 10px;
+    border: none;
+    padding: 1em 3em;
+    color: #ffffff;
+}
+
 h1{
     font-size: 2em;
     letter-spacing: 1px;
@@ -15,6 +23,10 @@ div{
     justify-content: center;
     width: 100%;
     margin-bottom: 1.5em;
+}
+
+form{
+    margin: 0.2em;
 }
 
 form input{

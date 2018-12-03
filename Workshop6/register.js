@@ -1,33 +1,39 @@
-function saveUser(){
-    var name = document.getElementById('name').value;
-    var lastname = document.getElementById('lastname').value;
-    var tel = document.getElementById('tel').value;
-
-    var user = {
-        name,
-        lastname,
-        tel
-    };
-    if(validateUser(user)){
-        console.log('User saved');
-    }
-    else{
-        console.log('Invalid data')
+/**
+ * Add an user to localStorage
+ */
+function saveUser() {
+    const user = userData();
+    if (user.name.length > 0
+        && user.las_name.length > 0
+        && user.tel.length > 0) {
+        insertToTable('users', user);
     }
 }
 
-function validateUser(user){
-    if(user.name!='' & user.lastname!=''){
-        return true;
-    }
+function deleteUser(){
+    let users = getTableData('users');
+    users.forEach(element => {
+        console.log(element);
+        console.log(users.length)
+        if(users.length == element.id){
+            deleteFromTable('users', element.id)
+        }
+    });
 }
 
-function bindEvents(){
-    document.getElementById('savebutton').addEventListener('click', registerButtonHandler);
+/**
+ * bindEvents of the document
+ */
+function bindEvents() {
+    jQuery('#savebutton').bind('click', (element) => {
+        saveUser();
+    });
+    jQuery('#delete').bind('click', (element) => {
+        deleteUser();
+    })
 }
 
-function registerButtonHandler(element){
-    saveUser();
-}
-
+/**
+ * bindEvents called at final
+ */
 bindEvents();
